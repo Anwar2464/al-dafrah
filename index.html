@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Al Dafrah Group | Media Production & Entertainment | UAE</title>
+<meta name="description" content="Al Dafrah Group — a UAE media organization associated with television, media production, marketing & advertising, and publishing.">
+<meta name="keywords" content="Al Dafrah Group, Al Dafrah TV, UAE media production, Abu Dhabi media, Dubai media production, UAE television, marketing advertising UAE, publishing UAE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070707;--ch:#141414;--ch2:#1c1c1c;--si:#a9adb3;--tx:#e9e6df;--au:#c5a25a;--au2:#8a6d33;--cr:#5c1420;
+--h:'Jost','Helvetica Neue',Arial,sans-serif;--b:'Manrope','Helvetica Neue',Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px;color-scheme:dark;height:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:300 17px/1.7 var(--b);overflow-x:hidden}
+h1,h2,h3{font-family:var(--h);font-weight:300;margin:0;line-height:1.05;letter-spacing:.01em}
+h2{font-size:clamp(2rem,5vw,4.2rem);max-width:15ch}
+p{max-width:60ch;color:#c9c6bf}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--au);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{position:relative;padding:120px 0;background:var(--bg)}
+.gold{color:var(--au)}
+.note{font-size:.78rem;color:var(--si);letter-spacing:.04em}
+.btn{display:inline-block;padding:15px 34px;border:1px solid var(--au);color:var(--au);text-decoration:none;font:500 .85rem var(--h);letter-spacing:.18em;background:none;cursor:pointer;transition:.3s}
+.btn:hover{background:var(--au);color:#000}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(14px + env(safe-area-inset-top,0px)) 24px 14px;display:flex;align-items:center;justify-content:space-between;transition:.4s}
+nav.s{background:rgba(10,10,10,.62);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(197,162,90,.2)}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1;font-family:var(--h)}
+.logo img{width:74px;height:74px;object-fit:contain;display:block;filter:drop-shadow(0 8px 20px rgba(197,162,90,.16))}.logo.wordmark{display:none}
+.logo b{font-weight:500;letter-spacing:.42em;font-size:1.05rem}
+.logo i{font-style:normal;font-weight:300;letter-spacing:.9em;font-size:.6rem;color:var(--au);margin-top:6px;border-top:1px solid var(--au);padding-top:5px}
+.links{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+.links a{text-decoration:none;font:400 .72rem var(--h);letter-spacing:.16em;color:var(--si);padding:6px 0;border-bottom:1px solid transparent;transition:.3s}
+.links a:hover,.links a.on{color:var(--tx);border-color:var(--au)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;height:1px;background:var(--tx);margin:8px 10px}
+@media(max-width:1020px){.burger{display:block}.links{position:fixed;inset:0;background:rgba(7,7,7,.97);flex-direction:column;justify-content:center;align-items:center;gap:26px;transform:translateY(-100%);transition:.5s}
+.links.o{transform:none}.links a{font-size:1rem}.burger{position:relative;z-index:60}}
+/* intro */
+#intro{position:fixed;inset:0;background:#000;z-index:100;display:grid;place-items:center;pointer-events:none}
+#intro div{width:0;height:1px;background:var(--au)}
+/* hero */
+#home{height:260vh;padding:0;background:transparent}
+.stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 24px}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block}
+#home:after{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 50% 45%,rgba(0,0,0,.08),rgba(0,0,0,.78) 72%),url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=2200&q=85') center/cover no-repeat;opacity:.34;pointer-events:none}
+.hero-logo{width:130px;height:130px;object-fit:contain;margin-bottom:18px;filter:drop-shadow(0 15px 35px rgba(197,162,90,.22));mix-blend-mode:screen}
+.hero-kicker{font:500 .72rem var(--h);letter-spacing:.35em;color:var(--au);margin-bottom:18px}
+main{position:relative;z-index:1}
+.stick h1{font-size:clamp(2.6rem,10vw,9rem);font-weight:200;letter-spacing:.04em;text-shadow:0 0 60px rgba(0,0,0,.9)}
+.stick p{margin:22px auto 34px;text-shadow:0 0 20px #000;color:#dcd8cf}
+.hint{position:absolute;bottom:28px;font:400 .7rem var(--h);letter-spacing:.3em;color:var(--si)}
+.hint::after{content:"";display:block;width:1px;height:40px;background:var(--au);margin:10px auto 0;animation:dr 2s infinite}
+@keyframes dr{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+/* about */
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#262626;margin-top:60px;border:1px solid #262626}
+.four div{background:var(--bg);padding:34px 20px;text-align:center;font:400 .8rem var(--h);letter-spacing:.2em}
+.four svg{width:44px;height:44px;stroke:var(--au);fill:none;stroke-width:1.2;display:block;margin:0 auto 16px}
+.four div:hover svg{animation:pu 1s}
+@keyframes pu{50%{transform:scale(1.18)}}
+/* ecosystem */
+#eco{background:radial-gradient(ellipse at 50% 60%,#1a1510,#070707 70%)}
+.ecow{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;margin-top:40px}
+#map{width:100%;height:auto;perspective:800px}
+.ln{stroke:#3a3a3a;stroke-width:1;transition:.4s}
+.nd{cursor:pointer;outline:none}
+.nd circle{fill:#111;stroke:var(--si);stroke-width:1;transition:.4s}
+.nd text{fill:var(--tx);font:400 11px var(--h);letter-spacing:.12em;text-anchor:middle;pointer-events:none}
+.nd:hover circle,.nd:focus circle,.nd.on circle{stroke:var(--au);fill:#1d1710;r:56}
+.nd.on+.ln,.ln.on{stroke:var(--au);stroke-dasharray:6;animation:fl 1s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-12}}
+#info{border-left:1px solid var(--au);padding-left:28px;min-height:190px}
+#info h3{font-size:1.7rem;margin-bottom:12px}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px;perspective:1000px}
+.card{position:relative;padding:34px 28px 40px;min-height:230px;background:linear-gradient(145deg,var(--ch2),#0b0b0b);border:1px solid #2a2a2a;transform-style:preserve-3d;transition:transform .25s,border-color .3s;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,0%),rgba(197,162,90,.18),transparent 55%);opacity:0;transition:.3s}
+.card:hover{border-color:var(--au2)}.card:hover::before{opacity:1}
+.card h3{font-size:1.25rem;letter-spacing:.14em;margin:64px 0 10px;transform:translateZ(30px)}
+.card p{margin:0;font-size:.92rem;transform:translateZ(15px)}
+.card .ic{position:absolute;top:26px;left:28px;width:40px;height:40px;stroke:var(--au);fill:none;stroke-width:1.2}
+/* tv */
+#tv{background:linear-gradient(180deg,#070707,#100c0d 50%,#070707)}
+.tvw{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.mon{aspect-ratio:16/9;border:8px solid #1e1e1e;outline:1px solid var(--au2);background:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px),url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.8),0 0 60px rgba(197,162,90,.12);transform:perspective(900px) rotateY(-9deg);transition:.6s}
+.mon:hover{transform:perspective(900px) rotateY(0)}
+.mon::after{content:"ILLUSTRATIVE VISUAL";position:absolute;left:12px;bottom:10px;font:400 .6rem var(--h);letter-spacing:.2em;color:var(--si)}
+.mon i{position:absolute;top:14px;left:14px;width:9px;height:9px;border-radius:50%;background:#a3202f;animation:bl 1.6s infinite}
+@keyframes bl{50%{opacity:.2}}
+.sig{position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg,transparent,var(--au),transparent);animation:sg 3s linear infinite}
+@keyframes sg{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+/* marketing */
+.ad{margin-top:56px;aspect-ratio:21/9;background:radial-gradient(ellipse at 30% 40%,#2a1a1e,#0a0a0a 70%);border:1px solid #2a2a2a;display:grid;grid-template-columns:repeat(4,1fr);align-items:end;padding:0;position:relative;overflow:hidden}
+.ad span{padding:24px;font:400 .85rem var(--h);letter-spacing:.2em;border-left:1px solid rgba(197,162,90,.25);height:100%;display:flex;align-items:flex-end;transition:.4s}
+.ad span:hover{background:rgba(197,162,90,.1);color:var(--au)}
+/* publishing */
+#pub{background:#0b0b0c;overflow:hidden}
+.mag{height:420px;perspective:1200px;display:flex;justify-content:center;align-items:center;margin-top:50px}
+.pg{width:230px;height:320px;margin:0 -30px;background:linear-gradient(160deg,#eee9dc,#bdb6a4);color:#111;padding:22px;transform-style:preserve-3d;box-shadow:0 30px 60px rgba(0,0,0,.7);font-family:var(--h)}
+.pg b{display:block;font-weight:500;letter-spacing:.2em;font-size:.75rem;border-bottom:1px solid #111;padding-bottom:8px}
+.pg em{display:block;font-style:normal;font-size:1.6rem;line-height:1.1;margin-top:120px;font-weight:300}
+.pg:nth-child(2){background:linear-gradient(160deg,#1b1b1b,#000);color:var(--au);border:1px solid var(--au2)}.pg:nth-child(2) b{border-color:var(--au)}
+.pg:nth-child(3){background:linear-gradient(160deg,#5c1420,#2a0a10);color:#eadbc0}.pg:nth-child(3) b{border-color:#eadbc0}
+/* heritage */
+.tl{position:relative;margin-top:60px;padding-left:34px;border-left:1px solid var(--au2)}
+.tl div{position:relative;padding-bottom:44px}
+.tl div::before{content:"";position:absolute;left:-40px;top:8px;width:11px;height:11px;background:var(--bg);border:1px solid var(--au);border-radius:50%}
+.tl h3{font-size:1.5rem}.tl small{color:var(--au);font:400 .75rem var(--h);letter-spacing:.2em}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px;margin-top:50px}
+.gal figure{margin:0;position:relative;overflow:hidden;background:var(--g);transition:.5s}
+.gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}.gal figure:nth-child(4){grid-row:span 2}.gal figure:nth-child(5){grid-column:span 2}
+.gal figure:hover{filter:brightness(1.4)}
+.gal figure img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease,filter .5s ease}.gal figure:hover img{transform:scale(1.08)}
+.gal figcaption{position:absolute;left:12px;bottom:10px;font:400 .62rem var(--h);letter-spacing:.14em;color:#d8d3c6;text-shadow:0 0 8px #000}
+/* contact */
+form{display:grid;gap:14px;max-width:560px;margin-top:36px}
+input,textarea{background:transparent;border:0;border-bottom:1px solid #444;color:var(--tx);padding:14px 2px;font:300 1rem var(--b)}
+input:focus,textarea:focus{outline:none;border-color:var(--au)}
+footer{padding:50px 0 40px;border-top:1px solid #222;background:#050505;text-align:center}
+footer ul{list-style:none;display:flex;gap:26px;justify-content:center;padding:0;flex-wrap:wrap;font:400 .75rem var(--h);letter-spacing:.16em}
+footer a{text-decoration:none;color:var(--si)}footer a:hover{color:var(--au)}
+/* cursor */
+#cur{position:fixed;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border:1px solid var(--au);border-radius:50%;z-index:90;pointer-events:none;display:grid;place-items:center;font:500 .6rem var(--h);letter-spacing:.14em;color:#000;transition:width .3s,height .3s,margin .3s,background .3s}
+#cur.b{width:74px;height:74px;margin:-37px 0 0 -37px;background:var(--au)}
+@media(hover:none),(max-width:1020px){#cur{display:none}}
+@media(max-width:860px){section{padding:80px 0}.hero-logo{width:100px;height:100px}.logo img{width:58px;height:58px}.four{grid-template-columns:1fr 1fr}.ecow,.tvw{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.ad{aspect-ratio:auto;grid-template-columns:1fr 1fr;min-height:260px}.gal{grid-template-columns:1fr 1fr}.pg{margin:0 -50px;width:170px;height:250px}.pg em{margin-top:80px;font-size:1.2rem}.mon{transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="intro"><div></div></div>
+<div id="cur"></div>
+<nav id="nav">
+ <a class="logo" href="#home" aria-label="Al Dafrah Group"><img src="assets/al-dafrah-logo-clean.png" alt="Al Dafrah Group logo"></a>
+ <button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+ <ul class="links" id="links">
+  <li><a href="#home">HOME</a></li><li><a href="#about">ABOUT</a></li><li><a href="#eco">ECOSYSTEM</a></li><li><a href="#prod">PRODUCTION</a></li><li><a href="#tv">TELEVISION</a></li><li><a href="#mkt">MARKETING</a></li><li><a href="#pub">PUBLISHING</a></li><li><a href="#heritage">HERITAGE</a></li><li><a href="#contact">CONTACT</a></li>
+ </ul>
+</nav>
+<canvas id="gl" aria-hidden="true"></canvas>
+<main>
+<section id="home"><div class="stick">
+ <div class="logo" style="align-items:center;margin-bottom:38px" aria-hidden="true"><b style="font-size:1.5rem">AL DAFRAH</b><i style="font-size:.8rem">GROUP</i></div>
+ <h1 id="ht">MEDIA WITHOUT LIMITS.</h1>
+ <p>Television. Production. Advertising. Publishing.<br>A connected media ecosystem built for modern audiences.</p>
+ <div class="note" style="margin-bottom:24px">WEBSITE CONCEPT · OFFICIAL BRAND ASSETS PENDING CONFIRMATION</div>
+  <a class="btn" href="#about">DISCOVER THE GROUP</a>
+ <div class="hint">SCROLL</div>
+</div></section>
+
+<section id="about"><div class="wrap">
+ <h2 class="rv">One group. Multiple media worlds.</h2>
+ <p class="rv" style="margin-top:28px">Al Dafrah Group is a UAE-based media organization associated with television, media production, marketing &amp; advertising, and publishing.</p>
+ <div class="four">
+  <div><svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="24" rx="2"/><path d="M16 42h16M24 34v8"/></svg>TELEVISION</div>
+  <div><svg viewBox="0 0 48 48"><rect x="6" y="14" width="26" height="20" rx="2"/><path d="M32 22l10-6v16l-10-6"/></svg>MEDIA PRODUCTION</div>
+  <div><svg viewBox="0 0 48 48"><path d="M8 20v8l22 10V10zM30 16c6 2 6 14 0 16M12 30l3 10"/></svg>MARKETING</div>
+  <div><svg viewBox="0 0 48 48"><path d="M8 8h26v32H8zM34 14h6v26H14M14 16h14M14 24h14M14 32h8"/></svg>PUBLISHING</div>
+ </div>
+</div></section>
+
+<section id="eco"><div class="wrap">
+ <h2 class="rv">The group ecosystem</h2>
+ <div class="ecow">
+  <svg id="map" viewBox="0 0 600 460" role="group" aria-label="Interactive ecosystem map">
+   <g id="lines"></g><g id="nodes"></g>
+  </svg>
+  <div id="info" aria-live="polite"><h3>Al Dafrah Group</h3><p>Hover or focus a node to explore how the group's media activities connect. Structure shown is conceptual; legal entity structure is information to be confirmed.</p></div>
+ </div>
+</div></section>
+
+<section id="prod"><div class="wrap">
+ <h2 class="rv">Media production</h2>
+ <p class="rv" style="margin-top:24px">Categories drawn from public information about the group.</p>
+ <div class="grid" id="pg"></div>
+</div></section>
+
+<section id="tv"><div class="wrap tvw">
+ <div>
+  <h2 class="rv">Television &amp; broadcast</h2>
+  <p style="margin:24px 0 34px">Al Dafrah TV is publicly associated with the group and operates its own website. That site is separate from this concept.</p>
+  <a class="btn" href="https://aldafrah.tv/" target="_blank" rel="noopener noreferrer">VISIT AL DAFRAH TV</a>
+ </div>
+ <div class="mon" role="img" aria-label="Illustrative broadcast monitor"><i></i><div class="sig"></div></div>
+</div></section>
+
+<section id="mkt"><div class="wrap">
+ <h2 class="rv">Marketing &amp; advertising</h2>
+ <p style="margin-top:24px">Marketing &amp; advertising capabilities associated with the group.</p>
+ <div class="ad"><span>BRAND STRATEGY</span><span>CAMPAIGNS</span><span>DIGITAL MEDIA</span><span>VISUAL COMMUNICATION</span></div>
+</div></section>
+
+<section id="pub"><div class="wrap">
+ <h2 class="rv">Publishing</h2>
+ <p style="margin-top:24px">Al Dafrah Magazine — editorial storytelling as part of the group. Circulation and issue details: information to be confirmed.</p>
+ <div class="mag" id="mag">
+  <div class="pg"><b>AL DAFRAH MAGAZINE</b><em>Editorial</em></div>
+  <div class="pg"><b>AL DAFRAH MAGAZINE</b><em>Culture</em></div>
+  <div class="pg"><b>AL DAFRAH MAGAZINE</b><em>Vision</em></div>
+ </div>
+ <p class="note">Illustrative visual — not an actual cover.</p>
+</div></section>
+
+<section id="heritage"><div class="wrap">
+ <h2 class="rv">Media heritage</h2>
+ <p class="note" style="margin-top:20px">Historical information from public sources; not current operating claims.</p>
+ <div class="tl">
+  <div><small>AROUND 2010</small><h3>Al Dafrah TV</h3><p>Publicly listed as founded around 2010.</p></div>
+  <div><small>HISTORICAL</small><h3>Media production</h3><p>Television and studio production publicly associated with the group.</p></div>
+  <div><small>HISTORICAL</small><h3>Dubai &amp; Abu Dhabi presence</h3><p>Public reporting links the group to Dubai Studio City and Abu Dhabi.</p></div>
+  <div><small>PRESENT</small><h3>Digital media</h3><p>Digital media appears in public profiles of the group's TV brand.</p></div>
+ </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+ <h2 class="rv">Visual showcase</h2>
+ <div class="gal">
+  <figure style="--g:linear-gradient(135deg,#1a1510,#000 60%,#3a2c12)"><figcaption>ILLUSTRATIVE VISUAL · STUDIO</figcaption></figure>
+  <figure style="--g:linear-gradient(200deg,#222,#050505)"><figcaption>ILLUSTRATIVE VISUAL · CAMERA</figcaption></figure>
+  <figure style="--g:linear-gradient(160deg,#2a0a10,#050505)"><figcaption>ILLUSTRATIVE VISUAL · LED WALL</figcaption></figure>
+  <figure style="--g:linear-gradient(0deg,#3a2c12,#0a0a0a 70%)"><figcaption>ILLUSTRATIVE VISUAL · SKYLINE</figcaption></figure>
+  <figure style="--g:linear-gradient(90deg,#111,#2b2b2e,#111)"><figcaption>ILLUSTRATIVE VISUAL · CONTROL ROOM</figcaption></figure>
+ </div>
+ <p class="note" style="margin-top:14px">Placeholder art. Replace with licensed or company-approved photography.</p>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <h2 class="rv">Let's create what's next.</h2>
+ <p style="margin-top:24px">Contact details to be confirmed.</p>
+ <form id="cf">
+  <input name="n" placeholder="Name" aria-label="Name" required>
+  <input name="c" placeholder="Company" aria-label="Company">
+  <input name="e" type="email" placeholder="Email" aria-label="Email" required>
+  <textarea name="m" rows="3" placeholder="Message" aria-label="Message"></textarea>
+  <button class="btn" type="submit" style="justify-self:start">SEND MESSAGE</button>
+  <p class="note" id="fm" role="status">Demo contact form — destination to be configured.</p>
+ </form>
+</div></section>
+</main>
+<footer><div class="wrap">
+ <div class="logo" style="align-items:center;margin-bottom:8px"><img src="assets/al-dafrah-logo-clean.png" alt="Al Dafrah Group logo" style="width:82px;height:82px"></div>
+ <p style="margin:14px auto;color:var(--si)">Media. Production. Vision.</p>
+ <ul><li><a href="#about">ABOUT</a></li><li><a href="https://www.linkedin.com/company/al-dafrah-group/" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li><li><a href="https://aldafrah.tv/" target="_blank" rel="noopener noreferrer">AL DAFRAH TV</a></li><li><a href="#contact">CONTACT</a></li></ul>
+ <p class="note" style="margin:16px auto">© 2026 Al Dafrah Group. All rights reserved. · Website concept / demo · Concept identity — pending official brand assets.</p>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,mobile=innerWidth<860;
+var $=function(s){return document.querySelector(s)};
+/* nav */
+var nav=$('#nav'),links=$('#links'),bg=$('.burger');
+addEventListener('scroll',function(){nav.classList.toggle('s',scrollY>40)},{passive:true});
+bg.onclick=function(){var o=links.classList.toggle('o');bg.setAttribute('aria-expanded',o)};
+links.querySelectorAll('a').forEach(function(a){a.onclick=function(){links.classList.remove('o');bg.setAttribute('aria-expanded',false)}});
+var secs=[].slice.call(links.querySelectorAll('a'));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){secs.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{threshold:.4});
+['home','about','eco','prod','tv','mkt','pub','heritage','contact'].forEach(function(i){io.observe($('#'+i))});
+/* cards */
+var cats=[['STUDIO PRODUCTION','Studio-based production environments.','<rect x="6" y="10" width="28" height="20" rx="2"/><path d="M34 16l6-4v16l-6-4"/>'],['VIDEO PRODUCTION','Video content from concept to delivery.','<circle cx="20" cy="20" r="12"/><circle cx="20" cy="20" r="4"/>'],['TELEVISION PRODUCTION','Programming for broadcast audiences.','<rect x="4" y="8" width="32" height="22" rx="2"/><path d="M14 36h12"/>'],['DIGITAL MEDIA','Content built for online platforms.','<path d="M6 30l8-10 6 6 8-14 6 8"/>'],['EVENT MEDIA','Media coverage for live events.','<path d="M20 6l4 10 10 1-8 7 3 10-9-6-9 6 3-10-8-7 10-1z"/>'],['BROADCASTING','Signal, studio and outside broadcast workflows.','<path d="M8 28a16 16 0 0 1 24 0M13 28a10 10 0 0 1 14 0"/><circle cx="20" cy="30" r="2"/>']];
+var pg=$('#pg');
+cats.forEach(function(c){var d=document.createElement('article');d.className='card';d.innerHTML='<svg class="ic" viewBox="0 0 40 40">'+c[2]+'</svg><h3>'+c[0]+'</h3><p>'+c[1]+'</p>';pg.appendChild(d)});
+document.querySelectorAll('.card').forEach(function(c){
+ c.addEventListener('mousemove',function(e){if(reduce||mobile)return;var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.transform='rotateY('+(x-.5)*14+'deg) rotateX('+(.5-y)*14+'deg)';c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%')});
+ c.addEventListener('mouseleave',function(){c.style.transform=''})});
+/* ecosystem */
+var NS='http://www.w3.org/2000/svg',ln=$('#lines'),nd=$('#nodes');
+var N=[['AL DAFRAH TV',90,100,'Al Dafrah TV','Television brand publicly associated with the group, with its own website at aldafrah.tv.'],['MARKETING',510,100,'Marketing & Advertising','Marketing and advertising capabilities associated with the group.'],['MAGAZINE',90,360,'Al Dafrah Magazine','Publishing arm associated with the group. Details to be confirmed.'],['PRODUCTION',510,360,'Media Production','Studio, video and television production activity associated with the group.']];
+function mk(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e}
+var lines=[];
+N.forEach(function(n,i){var l=mk('line',{x1:300,y1:230,x2:n[1],y2:n[2],class:'ln'});ln.appendChild(l);lines.push(l);
+ var g=mk('g',{class:'nd',tabindex:0,role:'button','aria-label':n[3]});g.appendChild(mk('circle',{cx:n[1],cy:n[2],r:46}));var t=mk('text',{x:n[1],y:n[2]+4});t.textContent=n[0];g.appendChild(t);nd.appendChild(g);
+ function on(){document.querySelectorAll('.nd').forEach(function(x){x.classList.remove('on')});g.classList.add('on');lines.forEach(function(x){x.classList.remove('on')});l.classList.add('on');$('#info').innerHTML='<h3>'+n[3]+'</h3><p>'+n[4]+'</p>'}
+ g.addEventListener('mouseenter',on);g.addEventListener('focus',on);g.addEventListener('click',on)});
+var c=mk('g',{class:'nd on'});c.appendChild(mk('circle',{cx:300,cy:230,r:64,style:'stroke:#c5a25a'}));[['AL DAFRAH',226],['GROUP',244]].forEach(function(t){var x=mk('text',{x:300,y:t[1]+4});x.textContent=t[0];c.appendChild(x)});nd.appendChild(c);
+/* publishing pages */
+var pgs=document.querySelectorAll('.pg');
+/* form */
+$('#cf').onsubmit=function(e){e.preventDefault();$('#fm').textContent='Demo only — nothing was sent. Destination to be configured.'};
+/* cursor */
+var cur=$('#cur'),cx=0,cy=0,tx=0,ty=0;
+addEventListener('mousemove',function(e){tx=e.clientX;ty=e.clientY});
+(function m(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cur.style.transform='translate('+cx+'px,'+cy+'px)';requestAnimationFrame(m)})();
+document.querySelectorAll('a,button,.nd,.card').forEach(function(el){el.addEventListener('mouseenter',function(){cur.classList.add('b');cur.textContent=el.matches('.card')?'VIEW':el.matches('.nd')?'EXPLORE':'OPEN'});el.addEventListener('mouseleave',function(){cur.classList.remove('b');cur.textContent=''})});
+/* GSAP */
+gsap.registerPlugin(ScrollTrigger);
+var prog=0;
+if(!reduce){
+ gsap.timeline().to('#intro div',{width:'40vw',duration:.7,ease:'power2.inOut'}).to('#intro',{opacity:0,duration:.6}).set('#intro',{display:'none'});
+ gsap.from('#ht',{opacity:0,y:30,letterSpacing:'.3em',duration:1.4,delay:.8,ease:'power3.out'});
+ ScrollTrigger.create({trigger:'#home',start:'top top',end:'bottom bottom',scrub:.6,onUpdate:function(s){prog=s.progress;$('.stick').style.opacity=prog>.7?Math.max(0,1-(prog-.7)/.25):1}});
+ gsap.utils.toArray('.rv').forEach(function(el){gsap.from(el,{opacity:0,y:36,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}})});
+ gsap.to(pgs[0],{rotateY:35,x:-40,scrollTrigger:{trigger:'#mag',scrub:1,start:'top bottom',end:'bottom top'}});
+ gsap.to(pgs[1],{rotateY:0,y:-30,scrollTrigger:{trigger:'#mag',scrub:1,start:'top bottom',end:'bottom top'}});
+ gsap.to(pgs[2],{rotateY:-35,x:40,scrollTrigger:{trigger:'#mag',scrub:1,start:'top bottom',end:'bottom top'}});
+ gsap.from('.ad span',{yPercent:100,stagger:.12,duration:1,scrollTrigger:{trigger:'.ad',start:'top 80%'}});
+}else{$('#intro').style.display='none';pgs[0].style.transform='rotateY(20deg)';pgs[2].style.transform='rotateY(-20deg)'}
+/* THREE hero */
+if(!window.THREE)return;
+var cv=$('#gl'),R=new THREE.WebGLRenderer({canvas:cv,antialias:!mobile,alpha:true});
+R.setPixelRatio(Math.min(devicePixelRatio,mobile?1.25:2));
+var S=new THREE.Scene();S.fog=new THREE.FogExp2(0x070707,.028);
+var cam=new THREE.PerspectiveCamera(55,1,.1,200);cam.position.z=14;
+function size(){R.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}size();addEventListener('resize',size);
+function tex(i){var k=document.createElement('canvas');k.width=256;k.height=144;var x=k.getContext('2d');var g=x.createLinearGradient(0,0,256,144);g.addColorStop(0,i%3?'#1a1510':'#2a0a10');g.addColorStop(1,'#050505');x.fillStyle=g;x.fillRect(0,0,256,144);x.strokeStyle='#c5a25a';x.lineWidth=2;for(var j=0;j<5;j++){var y=24+j*24;x.globalAlpha=.25+((i+j)%3)*.25;x.beginPath();x.moveTo(24,y);x.lineTo(24+((i*37+j*53)%180)+30,y);x.stroke()}x.globalAlpha=1;x.strokeRect(6,6,244,132);return new THREE.CanvasTexture(k)}
+var scr=[],n=mobile?8:14;
+for(var i=0;i<n;i++){var m=new THREE.Mesh(new THREE.BoxGeometry(4.4,2.5,.12),new THREE.MeshBasicMaterial({map:tex(i)}));
+ var side=i%2?1:-1;m.userData={x:side*(3.4+(i%3)*.5),y:((i*37)%5-2)*1.1,z:-i*4.2,side:side,r:side*-.25};
+ m.position.set(m.userData.x,m.userData.y,m.userData.z);m.rotation.y=m.userData.r;
+ var fr=new THREE.LineSegments(new THREE.EdgesGeometry(m.geometry),new THREE.LineBasicMaterial({color:0xc5a25a,transparent:true,opacity:.6}));m.add(fr);S.add(m);scr.push(m)}
+/* lens */
+var lens=new THREE.Group(),gm=new THREE.MeshBasicMaterial({color:0xc5a25a,wireframe:false}),sm=new THREE.MeshBasicMaterial({color:0x8d9198});
+[[1.5,.06,gm],[1.15,.05,sm],[.8,.05,gm],[.45,.04,sm]].forEach(function(r,i){var t=new THREE.Mesh(new THREE.TorusGeometry(r[0],r[1],8,64),r[2]);t.position.z=-i*.25;lens.add(t)});
+var core=new THREE.Mesh(new THREE.CircleGeometry(.36,32),new THREE.MeshBasicMaterial({color:0x5c1420}));core.position.z=-.9;lens.add(core);
+lens.position.set(0,0,2);S.add(lens);
+/* particles */
+var pc=mobile?250:700,pa=new Float32Array(pc*3);for(var p=0;p<pc;p++){pa[p*3]=(Math.random()-.5)*30;pa[p*3+1]=(Math.random()-.5)*16;pa[p*3+2]=-Math.random()*70+10}
+var pt=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.BufferAttribute(pa,3)),new THREE.PointsMaterial({color:0xc5a25a,size:.05,transparent:true,opacity:.7}));S.add(pt);
+var mx=0,my=0;addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+var t0=0;
+function loop(t){requestAnimationFrame(loop);var lim=innerHeight*3;if(scrollY>lim){cv.style.visibility='hidden';return}cv.style.visibility='visible';
+ var s=reduce?0:t*.001,p=prog;
+ cam.position.z=14-p*42;cam.position.x+=(mx*2-cam.position.x)*.05;cam.position.y+=(-my*1.2-cam.position.y)*.05;cam.lookAt(mx*1.5,-my*.8,cam.position.z-10);
+ scr.forEach(function(m,i){var u=m.userData,sp=1+p*1.6;m.position.x=u.x*sp;m.position.y=u.y+Math.sin(s+i)*.15;m.rotation.y=u.r-u.side*p*.5});
+ lens.rotation.z=s*.3+p*3;lens.rotation.y=Math.sin(s*.5)*.3;
+ pt.rotation.z=s*.02;R.render(S,cam)}
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
